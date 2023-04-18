@@ -12,4 +12,4 @@ struct Todo: Identifiable, Equatable {
     let completed: Bool
 }
 
-extension Todo: Decodable {}
+extension Todo: Codable {}

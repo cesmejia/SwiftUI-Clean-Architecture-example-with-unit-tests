@@ -22,6 +22,7 @@
 		CA4501EE29EE71C100D37E9A /* TodosDataSourceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */; };
 		CA4501F029EE727100D37E9A /* TodosDataSourceLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */; };
 		CA4501F229EE733600D37E9A /* GetTodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501F129EE733600D37E9A /* GetTodosRepository.swift */; };
+		CAAB8B5129EEFCBB003D4399 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B5029EEFCBB003D4399 /* HomeViewModel.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceRemote.swift; sourceTree = "<group>"; };
 		CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceLocal.swift; sourceTree = "<group>"; };
 		CA4501F129EE733600D37E9A /* GetTodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepository.swift; sourceTree = "<group>"; };
+		CAAB8B5029EEFCBB003D4399 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 		CA4501B629EE61BD00D37E9A /* MMA */ = {
 			isa = PBXGroup;
 			children = (
+				CAAB8B4F29EEFC89003D4399 /* Presentation */,
 				CA4501E929EE715900D37E9A /* Data */,
 				CA4501CB29EE620C00D37E9A /* Domain */,
 				CA4501B729EE61BD00D37E9A /* AppDelegate.swift */,
@@ -212,6 +215,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		CAAB8B4F29EEFC89003D4399 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB8B5029EEFCBB003D4399 /* HomeViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		CAB4F26629EEE6E500E426D7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4501D729EE66AF00D37E9A /* GetTodoError.swift in Sources */,
+				CAAB8B5129EEFCBB003D4399 /* HomeViewModel.swift in Sources */,
 				CA4501BC29EE61BD00D37E9A /* ViewController.swift in Sources */,
 				CA4501D129EE631600D37E9A /* GetTodosUseCase.swift in Sources */,
 				CA4501B829EE61BD00D37E9A /* AppDelegate.swift in Sources */,

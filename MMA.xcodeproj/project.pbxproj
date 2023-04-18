@@ -148,7 +148,6 @@
 			children = (
 				CA4501E629EE6B5A00D37E9A /* Helpers */,
 				CA4501E529EE695C00D37E9A /* Domain */,
-				CA4501DE29EE695000D37E9A /* GetTodosUseCaseTests.swift */,
 			);
 			path = MMATests;
 			sourceTree = "<group>";
@@ -156,6 +155,7 @@
 		CA4501E529EE695C00D37E9A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CA4501DE29EE695000D37E9A /* GetTodosUseCaseTests.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";

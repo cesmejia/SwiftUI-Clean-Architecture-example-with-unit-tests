@@ -17,6 +17,13 @@ final class GetTodosUseCaseTests: XCTestCase {
         let getTodoResult = await sut.getTodos()
         XCTAssertEqual(Result.success(Self.todo), getTodoResult)
     }
+
+    func testGetTodosUseCase_whenCallingGetTodosFails_getsErrorResponse() async {
+        let getTodosSource = GetTodosSourceStub(response: .failure(.networkError(cause: "cause")))
+        let sut = makeSUT(getTodosSource: getTodosSource)
+        let getTodoResult = await sut.getTodos()
+        XCTAssertEqual(Result.failure(.networkError(cause: "cause")), getTodoResult)
+    }
     
     // MARK: - Helpers
     

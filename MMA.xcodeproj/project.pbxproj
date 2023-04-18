@@ -19,6 +19,9 @@
 		CA4501D729EE66AF00D37E9A /* GetTodoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501D629EE66AF00D37E9A /* GetTodoError.swift */; };
 		CA4501DF29EE695000D37E9A /* GetTodosUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501DE29EE695000D37E9A /* GetTodosUseCaseTests.swift */; };
 		CA4501E829EE6B8300D37E9A /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501E729EE6B8300D37E9A /* XCTestCase+Extensions.swift */; };
+		CA4501EE29EE71C100D37E9A /* TodosDataSourceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */; };
+		CA4501F029EE727100D37E9A /* TodosDataSourceLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */; };
+		CA4501F229EE733600D37E9A /* GetTodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501F129EE733600D37E9A /* GetTodosRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CA4501DC29EE695000D37E9A /* MMATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4501DE29EE695000D37E9A /* GetTodosUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosUseCaseTests.swift; sourceTree = "<group>"; };
 		CA4501E729EE6B8300D37E9A /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceRemote.swift; sourceTree = "<group>"; };
+		CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceLocal.swift; sourceTree = "<group>"; };
+		CA4501F129EE733600D37E9A /* GetTodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		CA4501B629EE61BD00D37E9A /* MMA */ = {
 			isa = PBXGroup;
 			children = (
+				CA4501E929EE715900D37E9A /* Data */,
 				CA4501CB29EE620C00D37E9A /* Domain */,
 				CA4501B729EE61BD00D37E9A /* AppDelegate.swift */,
 				CA4501B929EE61BD00D37E9A /* SceneDelegate.swift */,
@@ -166,6 +173,40 @@
 				CA4501E729EE6B8300D37E9A /* XCTestCase+Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CA4501E929EE715900D37E9A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501EC29EE716A00D37E9A /* Repository */,
+				CA4501EB29EE716000D37E9A /* Remote */,
+				CA4501EA29EE715D00D37E9A /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CA4501EA29EE715D00D37E9A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		CA4501EB29EE716000D37E9A /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		CA4501EC29EE716A00D37E9A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501F129EE733600D37E9A /* GetTodosRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +314,11 @@
 				CA4501BC29EE61BD00D37E9A /* ViewController.swift in Sources */,
 				CA4501D129EE631600D37E9A /* GetTodosUseCase.swift in Sources */,
 				CA4501B829EE61BD00D37E9A /* AppDelegate.swift in Sources */,
+				CA4501F229EE733600D37E9A /* GetTodosRepository.swift in Sources */,
 				CA4501BA29EE61BD00D37E9A /* SceneDelegate.swift in Sources */,
 				CA4501CF29EE626C00D37E9A /* Todo.swift in Sources */,
+				CA4501F029EE727100D37E9A /* TodosDataSourceLocal.swift in Sources */,
+				CA4501EE29EE71C100D37E9A /* TodosDataSourceRemote.swift in Sources */,
 				CA4501D429EE652000D37E9A /* GetTodosSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

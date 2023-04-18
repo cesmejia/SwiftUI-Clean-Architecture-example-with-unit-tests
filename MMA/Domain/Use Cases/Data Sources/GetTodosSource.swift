@@ -8,17 +8,17 @@
 import Foundation
 
 protocol GetTodosSource {
-    func getTodos() -> Result<Todo, GetTodoError>
+    func getTodos() async -> Result<[Todo], GetTodoError>
 }
 
 class GetTodosSourceStub: GetTodosSource {
-    let response: Result<Todo, GetTodoError>
+    let response: Result<[Todo], GetTodoError>
 
-    init(response: Result<Todo, GetTodoError>) {
+    init(response: Result<[Todo], GetTodoError>) {
         self.response = response
     }
     
-    func getTodos() -> Result<Todo, GetTodoError> {
+    func getTodos() -> Result<[Todo], GetTodoError> {
         response
     }
 }

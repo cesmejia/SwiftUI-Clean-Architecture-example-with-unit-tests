@@ -7,4 +7,5 @@
 
 enum GetTodoError: Error, Equatable {
     case networkError(cause: String)
+    case localStorageError(cause: String)
 }

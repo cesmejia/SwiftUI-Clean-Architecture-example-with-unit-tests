@@ -12,7 +12,7 @@ class GetTodosUseCase {
         self.source = source
     }
     
-    func getTodos() async -> Result<Todo, GetTodoError> {
-        source.getTodos()
+    func getTodos() async -> Result<[Todo], GetTodoError> {
+        await source.getTodos()
     }
 }

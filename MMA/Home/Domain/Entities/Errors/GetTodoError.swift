@@ -7,7 +7,9 @@
 
 import Foundation
 
-enum GetTodoError: Error, Equatable, LocalizedError {
+enum GetTodoError: Error, Hashable, Identifiable, Equatable, LocalizedError {
+    var id: Self { self }
+    
     case networkError(cause: String)
     case localStorageError(cause: String)
     

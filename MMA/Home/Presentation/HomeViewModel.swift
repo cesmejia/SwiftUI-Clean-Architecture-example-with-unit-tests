@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 class HomeViewModel: ObservableObject {
     @Published var todos = [Todo]()
-    @Published var errorAlertCause: String?
+    @Published var alertError: GetTodoError?
     
     let getTodosUseCase: GetTodosUseCase
 
@@ -24,11 +24,15 @@ class HomeViewModel: ObservableObject {
         case let .success(todos):
             self.todos = todos
         case let .failure(getTodoError):
-            errorAlertCause = getTodoError.localizedDescription
+            alertError = getTodoError
         }
     }
 
     func onAppearAction() async {
+        await getTodos()
+    }
+    
+    func refreshListAction() async {
         await getTodos()
     }
 }

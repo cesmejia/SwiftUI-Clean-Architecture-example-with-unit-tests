@@ -26,6 +26,9 @@ struct HomeView: View {
                 .listRowBackground(Color.blue.opacity(0.5))
             }
         }
+        .sheet(item: $viewModel.alertError) { error in
+            Text(error.localizedDescription)
+        }
         .background(.cyan.gradient)
         .toolbarBackground(.cyan.gradient, for: .navigationBar)
         .scrollContentBackground(.hidden)
@@ -33,6 +36,11 @@ struct HomeView: View {
         .onAppear {
             Task {
                 await viewModel.onAppearAction()
+            }
+        }
+        .refreshable {
+            Task {
+                await viewModel.refreshListAction()
             }
         }
     }

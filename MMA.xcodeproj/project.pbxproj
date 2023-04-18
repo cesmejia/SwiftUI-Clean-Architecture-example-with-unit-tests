@@ -31,6 +31,7 @@
 		CAAB8B6229EF1CA0003D4399 /* UpdateTodoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B6129EF1CA0003D4399 /* UpdateTodoError.swift */; };
 		CAAB8B6429EF1F9E003D4399 /* TodosDbImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B6329EF1F9E003D4399 /* TodosDbImp.swift */; };
 		CAAB8B6629EF2114003D4399 /* TodosDbDataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B6529EF2114003D4399 /* TodosDbDataGateway.swift */; };
+		CAAB8B6829EF2727003D4399 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B6729EF2727003D4399 /* HomeView.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		CAAB8B6129EF1CA0003D4399 /* UpdateTodoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTodoError.swift; sourceTree = "<group>"; };
 		CAAB8B6329EF1F9E003D4399 /* TodosDbImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbImp.swift; sourceTree = "<group>"; };
 		CAAB8B6529EF2114003D4399 /* TodosDbDataGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbDataGateway.swift; sourceTree = "<group>"; };
+		CAAB8B6729EF2727003D4399 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +285,7 @@
 		CAAB8B5829EF0F13003D4399 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CAAB8B6729EF2727003D4399 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				CAAB8B6029EF1BD7003D4399 /* TodosDb.swift in Sources */,
 				CA4501D429EE652000D37E9A /* GetTodosSource.swift in Sources */,
 				CAAB8B6429EF1F9E003D4399 /* TodosDbImp.swift in Sources */,
+				CAAB8B6829EF2727003D4399 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

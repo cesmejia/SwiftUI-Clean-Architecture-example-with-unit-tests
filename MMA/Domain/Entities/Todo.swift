@@ -11,3 +11,5 @@ struct Todo: Equatable {
     let title: String
     let completed: Bool
 }
+
+extension Todo: Decodable {}

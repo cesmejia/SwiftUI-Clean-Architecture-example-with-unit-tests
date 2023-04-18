@@ -13,6 +13,10 @@
 		CA4501BF29EE61BD00D37E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4501BD29EE61BD00D37E9A /* Main.storyboard */; };
 		CA4501C129EE61BF00D37E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4501C029EE61BF00D37E9A /* Assets.xcassets */; };
 		CA4501C429EE61BF00D37E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4501C229EE61BF00D37E9A /* LaunchScreen.storyboard */; };
+		CA4501CF29EE626C00D37E9A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501CE29EE626C00D37E9A /* Todo.swift */; };
+		CA4501D129EE631600D37E9A /* GetTodosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501D029EE631600D37E9A /* GetTodosUseCase.swift */; };
+		CA4501D429EE652000D37E9A /* GetTodosSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501D329EE652000D37E9A /* GetTodosSource.swift */; };
+		CA4501D729EE66AF00D37E9A /* GetTodoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501D629EE66AF00D37E9A /* GetTodoError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CA4501C029EE61BF00D37E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4501C329EE61BF00D37E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA4501C529EE61BF00D37E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4501CE29EE626C00D37E9A /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		CA4501D029EE631600D37E9A /* GetTodosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosUseCase.swift; sourceTree = "<group>"; };
+		CA4501D329EE652000D37E9A /* GetTodosSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosSource.swift; sourceTree = "<group>"; };
+		CA4501D629EE66AF00D37E9A /* GetTodoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodoError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		CA4501B629EE61BD00D37E9A /* MMA */ = {
 			isa = PBXGroup;
 			children = (
+				CA4501CB29EE620C00D37E9A /* Domain */,
 				CA4501B729EE61BD00D37E9A /* AppDelegate.swift */,
 				CA4501B929EE61BD00D37E9A /* SceneDelegate.swift */,
 				CA4501BB29EE61BD00D37E9A /* ViewController.swift */,
@@ -65,6 +74,49 @@
 				CA4501C529EE61BF00D37E9A /* Info.plist */,
 			);
 			path = MMA;
+			sourceTree = "<group>";
+		};
+		CA4501CB29EE620C00D37E9A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501CD29EE621900D37E9A /* Use Cases */,
+				CA4501CC29EE621300D37E9A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CA4501CC29EE621300D37E9A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501CE29EE626C00D37E9A /* Todo.swift */,
+				CA4501D529EE66A600D37E9A /* Errors */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CA4501CD29EE621900D37E9A /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501D029EE631600D37E9A /* GetTodosUseCase.swift */,
+				CA4501D229EE64F200D37E9A /* Data Sources */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		CA4501D229EE64F200D37E9A /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501D329EE652000D37E9A /* GetTodosSource.swift */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		CA4501D529EE66A600D37E9A /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				CA4501D629EE66AF00D37E9A /* GetTodoError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4501D729EE66AF00D37E9A /* GetTodoError.swift in Sources */,
 				CA4501BC29EE61BD00D37E9A /* ViewController.swift in Sources */,
+				CA4501D129EE631600D37E9A /* GetTodosUseCase.swift in Sources */,
 				CA4501B829EE61BD00D37E9A /* AppDelegate.swift in Sources */,
 				CA4501BA29EE61BD00D37E9A /* SceneDelegate.swift in Sources */,
+				CA4501CF29EE626C00D37E9A /* Todo.swift in Sources */,
+				CA4501D429EE652000D37E9A /* GetTodosSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

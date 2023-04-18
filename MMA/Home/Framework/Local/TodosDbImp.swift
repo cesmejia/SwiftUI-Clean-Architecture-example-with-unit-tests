@@ -18,7 +18,12 @@ class TodosDbImp: TodosDb {
     }
     
     func updateTodos(with todos: [Todo]) async -> Result<Void, UpdateTodoError> {
-        return .success(())
+        do {
+            try await save(todos: todos)
+            return .success(())
+        } catch {
+            return .failure(.localStorageError(cause: error.localizedDescription))
+        }
     }
     
     // MARK: - FileManager
@@ -36,5 +41,14 @@ class TodosDbImp: TodosDb {
             return todos
         }
         return try await task.value
+    }
+    
+    func save(todos: [Todo]) async throws {
+        let task = Task {
+            let data = try JSONEncoder().encode(todos)
+            let outfile = try fileURL()
+            try data.write(to: outfile)
+        }
+        _ = try await task.value
     }
 }

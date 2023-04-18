@@ -33,10 +33,8 @@ struct HomeView: View {
         .toolbarBackground(.cyan.gradient, for: .navigationBar)
         .scrollContentBackground(.hidden)
         .navigationTitle("Todos")
-        .onAppear {
-            Task {
-                await viewModel.onAppearAction()
-            }
+        .task {
+            await viewModel.onAppearAction()
         }
         .refreshable {
             Task {

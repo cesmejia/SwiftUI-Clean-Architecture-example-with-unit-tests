@@ -15,7 +15,7 @@ final class GetTodosUseCaseTests: XCTestCase {
     func testGetTodosUseCase_whenCallingGetTodosIsSuccessful_getsSuccessfulResponse() async {
         let sut = makeSUT()
         let getTodoResult = await sut.getTodos()
-        XCTAssertEqual(Result.success(Self.todo), getTodoResult)
+        XCTAssertEqual(Result.success([Self.todo]), getTodoResult)
     }
 
     func testGetTodosUseCase_whenCallingGetTodosFails_getsErrorResponse() async {
@@ -28,7 +28,7 @@ final class GetTodosUseCaseTests: XCTestCase {
     // MARK: - Helpers
     
     private func makeSUT(
-        getTodosSource: GetTodosSource = GetTodosSourceStub(response: .success(todo)),
+        getTodosSource: GetTodosSource = GetTodosSourceStub(response: .success([todo])),
         file: StaticString = #file,
         line: UInt = #line
     ) -> GetTodosUseCase {

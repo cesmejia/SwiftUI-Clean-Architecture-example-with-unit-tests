@@ -25,7 +25,7 @@ class GetTodosRepository: GetTodosSource {
             }
             return todosLocalSourceResponse
         case .failure:
-            return todosLocalSourceResponse
+            return await todosRemoteSource.fetchTodos()
         }
     }
 }

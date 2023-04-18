@@ -22,6 +22,7 @@
 		CA4501EE29EE71C100D37E9A /* TodosDataSourceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */; };
 		CA4501F029EE727100D37E9A /* TodosDataSourceLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */; };
 		CA4501F229EE733600D37E9A /* GetTodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501F129EE733600D37E9A /* GetTodosRepository.swift */; };
+		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CA4501ED29EE71C100D37E9A /* TodosDataSourceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceRemote.swift; sourceTree = "<group>"; };
 		CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceLocal.swift; sourceTree = "<group>"; };
 		CA4501F129EE733600D37E9A /* GetTodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepository.swift; sourceTree = "<group>"; };
+		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		CA4501DD29EE695000D37E9A /* MMATests */ = {
 			isa = PBXGroup;
 			children = (
+				CAB4F26629EEE6E500E426D7 /* Data */,
 				CA4501E629EE6B5A00D37E9A /* Helpers */,
 				CA4501E529EE695C00D37E9A /* Domain */,
 			);
@@ -207,6 +210,14 @@
 				CA4501F129EE733600D37E9A /* GetTodosRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		CAB4F26629EEE6E500E426D7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4501E829EE6B8300D37E9A /* XCTestCase+Extensions.swift in Sources */,
+				CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */,
 				CA4501DF29EE695000D37E9A /* GetTodosUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

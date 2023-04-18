@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class HomeViewModel: ObservableObject {
     @Published var todos = [Todo]()
     @Published var errorAlertCause: String?
@@ -23,16 +24,11 @@ class HomeViewModel: ObservableObject {
         case let .success(todos):
             self.todos = todos
         case let .failure(getTodoError):
-            errorAlertCause = extractErrorCause(getTodoError: getTodoError)
+            errorAlertCause = getTodoError.localizedDescription
         }
     }
-    
-    private func extractErrorCause(getTodoError: GetTodoError) -> String {
-        switch getTodoError {
-        case .networkError(let cause):
-            return cause
-        case .localStorageError(let cause):
-            return cause
-        }
+
+    func onAppearAction() async {
+        await getTodos()
     }
 }

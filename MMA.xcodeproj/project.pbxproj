@@ -23,6 +23,7 @@
 		CA4501F029EE727100D37E9A /* TodosDataSourceLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */; };
 		CA4501F229EE733600D37E9A /* GetTodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4501F129EE733600D37E9A /* GetTodosRepository.swift */; };
 		CAAB8B5129EEFCBB003D4399 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B5029EEFCBB003D4399 /* HomeViewModel.swift */; };
+		CAAB8B5429EF00CA003D4399 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B5329EF00CA003D4399 /* HomeViewModelTests.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		CA4501EF29EE727100D37E9A /* TodosDataSourceLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDataSourceLocal.swift; sourceTree = "<group>"; };
 		CA4501F129EE733600D37E9A /* GetTodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepository.swift; sourceTree = "<group>"; };
 		CAAB8B5029EEFCBB003D4399 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CAAB8B5329EF00CA003D4399 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 		CA4501DD29EE695000D37E9A /* MMATests */ = {
 			isa = PBXGroup;
 			children = (
+				CAAB8B5229EF008D003D4399 /* Presentation */,
 				CAB4F26629EEE6E500E426D7 /* Data */,
 				CA4501E629EE6B5A00D37E9A /* Helpers */,
 				CA4501E529EE695C00D37E9A /* Domain */,
@@ -219,6 +222,14 @@
 			isa = PBXGroup;
 			children = (
 				CAAB8B5029EEFCBB003D4399 /* HomeViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CAAB8B5229EF008D003D4399 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB8B5329EF00CA003D4399 /* HomeViewModelTests.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -353,6 +364,7 @@
 				CA4501E829EE6B8300D37E9A /* XCTestCase+Extensions.swift in Sources */,
 				CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */,
 				CA4501DF29EE695000D37E9A /* GetTodosUseCaseTests.swift in Sources */,
+				CAAB8B5429EF00CA003D4399 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

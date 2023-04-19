@@ -26,7 +26,7 @@ The project was developed with the following concepts in mind:
 
 ![Clean MVVM SwiftUI](https://user-images.githubusercontent.com/24886388/233205119-4adca89b-adbc-4ed6-a927-2c0be4b481ef.jpg)
 
-### Dislaimer:
+### Disclaimer:
 
 This is a very basic project to serve as guide for a tested Clean Architecture approach with SwiftUI.
 

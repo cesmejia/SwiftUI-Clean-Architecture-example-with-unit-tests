@@ -10,7 +10,7 @@ The project was developed with the following concepts in mind:
 - ``SOLID principles``
 - ``Clean Architecture``
 - ``MVVM Architecture``
-- ``Used of Composition root``
+- ``Use of Composition root``
 - ``Coordinator Pattern: Uses UIKit UINavigationController + UIHostingController for navigation``
 - ``Factory Pattern``
 - ``Repository Pattern``

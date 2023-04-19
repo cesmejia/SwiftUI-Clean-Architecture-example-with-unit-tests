@@ -39,6 +39,7 @@
 		CAB35D5329EF75B500F4CD47 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */; };
 		CAB35D5629EF83A800F4CD47 /* TodosDbImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
+		CAB61AC029F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB61ABF29F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbImpTests.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
+		CAB61ABF29F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbDataGatewayTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */,
+				CAB61ABF29F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */,
 				CA4501DF29EE695000D37E9A /* GetTodosUseCaseTests.swift in Sources */,
 				CAAB8B5429EF00CA003D4399 /* HomeViewModelTests.swift in Sources */,
+				CAB61AC029F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift in Sources */,
 				CAB35D5629EF83A800F4CD47 /* TodosDbImpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

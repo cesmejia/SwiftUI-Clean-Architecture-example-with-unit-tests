@@ -8,6 +8,12 @@
 import Foundation
 
 class TodosDbImp: TodosDb {
+    var directoryURL: URL?
+    
+    init(directoryURL: URL? = nil) {
+        self.directoryURL = directoryURL
+    }
+    
     func getTodos() async -> Result<[Todo], GetTodoError> {
         do {
             let todos = try await loadTodos()
@@ -35,7 +41,7 @@ class TodosDbImp: TodosDb {
     
     private func loadTodos() async throws -> [Todo] {
         let task = Task<[Todo], Error> {
-            let fileURL = try fileURL()
+            let fileURL = try directoryURL ?? fileURL()
             guard let data = try? Data(contentsOf: fileURL) else { return [] }
             let todos = try JSONDecoder().decode([Todo].self, from: data)
             return todos
@@ -43,10 +49,10 @@ class TodosDbImp: TodosDb {
         return try await task.value
     }
     
-    func save(todos: [Todo]) async throws {
+    private func save(todos: [Todo]) async throws {
         let task = Task {
             let data = try JSONEncoder().encode(todos)
-            let outfile = try fileURL()
+            let outfile = try directoryURL ?? fileURL()
             try data.write(to: outfile)
         }
         _ = try await task.value

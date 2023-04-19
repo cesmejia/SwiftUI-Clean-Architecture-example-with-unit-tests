@@ -37,6 +37,7 @@
 		CAAB8B7629EF37B8003D4399 /* CoordinatorScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B7529EF37B8003D4399 /* CoordinatorScreens.swift */; };
 		CAAEBC4729EF6D9500C0D4A4 /* TodosServiceImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */; };
 		CAB35D5329EF75B500F4CD47 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */; };
+		CAB35D5629EF83A800F4CD47 /* TodosDbImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		CAAB8B7529EF37B8003D4399 /* CoordinatorScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorScreens.swift; sourceTree = "<group>"; };
 		CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosServiceImpTests.swift; sourceTree = "<group>"; };
 		CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbImpTests.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -340,6 +342,7 @@
 		CAAEBC4429EF6D8400C0D4A4 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CAB35D5429EF839C00F4CD47 /* Local */,
 				CAAEBC4529EF6D8800C0D4A4 /* Remote */,
 			);
 			path = Framework;
@@ -351,6 +354,14 @@
 				CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		CAB35D5429EF839C00F4CD47 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		CAB4F26629EEE6E500E426D7 /* Data */ = {
@@ -497,6 +508,7 @@
 				CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */,
 				CA4501DF29EE695000D37E9A /* GetTodosUseCaseTests.swift in Sources */,
 				CAAB8B5429EF00CA003D4399 /* HomeViewModelTests.swift in Sources */,
+				CAB35D5629EF83A800F4CD47 /* TodosDbImpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

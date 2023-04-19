@@ -10,10 +10,6 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     
-    init(viewModel: HomeViewModel) {
-        self.viewModel = viewModel
-    }
-    
     var body: some View {
         List {
             ForEach(viewModel.todos) { todo in

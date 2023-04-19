@@ -35,13 +35,14 @@ final class HomeViewModelTests: XCTestCase {
     func testHomeViewModel_whenOnAppearGetTodosRemoteFails_errorAlertCauseIsSet() async {
         let remoteErrorCause = "Remote Fetch failed"
         let localErrorCause = "Local Storage failed"
-        let todosDataSourceRemoteStubWithError = TodosDataSourceRemoteStub(response: .failure(.networkError(cause: remoteErrorCause)))
+        let getTodoErrorNetworkError = GetTodoError.networkError(cause: remoteErrorCause)
+        let todosDataSourceRemoteStubWithError = TodosDataSourceRemoteStub(response: .failure(getTodoErrorNetworkError))
         let todosDataSourceLocalStubWithError = TodosDataSourceLocalStub(response: .failure(.localStorageError(cause: localErrorCause)))
         let getTodosSource = Self.buildGetTodosRepository(todosRemoteSource: todosDataSourceRemoteStubWithError, todosLocalSource: todosDataSourceLocalStubWithError)
         let getTodosUseCase = GetTodosUseCase(source: getTodosSource)
         let sut = makeSUT(getTodosUseCase: getTodosUseCase)
         await sut.onAppearAction()
-        XCTAssertEqual(sut.errorAlertCause, remoteErrorCause)
+        XCTAssertEqual(sut.alertError, getTodoErrorNetworkError)
     }
     
     // MARK: - Helpers

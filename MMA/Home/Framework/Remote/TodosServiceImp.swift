@@ -8,11 +8,16 @@
 import Foundation
 
 class TodosServiceImp: TodosService {
+    private let urlSession: URLSession
+    
+    init(urlSession: URLSession = .shared) {
+        self.urlSession = urlSession
+    }
+    
     func fetchTodos() async -> Result<[Todo], GetTodoError> {
-        let urlSession = URLSession.shared
-        let uRLRequest = URLRequest(url: URL(string: "https://jsonplaceholder.typicode.com/todos")!)
+        let urlRequest = URLRequest(url: URL(string: "https://jsonplaceholder.typicode.com/todos")!)
         do {
-            let (data, urlResponse) = try await urlSession.data(for: uRLRequest)
+            let (data, urlResponse) = try await urlSession.data(for: urlRequest)
             guard let urlResponse = urlResponse as? HTTPURLResponse else {
                 return .failure(.networkError(cause: "HTTPURLResponse cast error"))
             }

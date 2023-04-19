@@ -35,6 +35,8 @@
 		CAAB8B7129EF35BD003D4399 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B7029EF35BD003D4399 /* HomeFactory.swift */; };
 		CAAB8B7329EF363B003D4399 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B7229EF363B003D4399 /* AppCoordinator.swift */; };
 		CAAB8B7629EF37B8003D4399 /* CoordinatorScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB8B7529EF37B8003D4399 /* CoordinatorScreens.swift */; };
+		CAAEBC4729EF6D9500C0D4A4 /* TodosServiceImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */; };
+		CAB35D5329EF75B500F4CD47 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		CAAB8B7029EF35BD003D4399 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		CAAB8B7229EF363B003D4399 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CAAB8B7529EF37B8003D4399 /* CoordinatorScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorScreens.swift; sourceTree = "<group>"; };
+		CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosServiceImpTests.swift; sourceTree = "<group>"; };
+		CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,7 @@
 		CA4501DD29EE695000D37E9A /* MMATests */ = {
 			isa = PBXGroup;
 			children = (
+				CAAEBC4429EF6D8400C0D4A4 /* Framework */,
 				CAAB8B5229EF008D003D4399 /* Presentation */,
 				CAB4F26629EEE6E500E426D7 /* Data */,
 				CA4501E629EE6B5A00D37E9A /* Helpers */,
@@ -201,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				CA4501E729EE6B8300D37E9A /* XCTestCase+Extensions.swift */,
+				CAB35D5229EF75B500F4CD47 /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +335,22 @@
 				CAAB8B7529EF37B8003D4399 /* CoordinatorScreens.swift */,
 			);
 			path = CoordinatorScreens;
+			sourceTree = "<group>";
+		};
+		CAAEBC4429EF6D8400C0D4A4 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CAAEBC4529EF6D8800C0D4A4 /* Remote */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		CAAEBC4529EF6D8800C0D4A4 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		CAB4F26629EEE6E500E426D7 /* Data */ = {
@@ -469,6 +491,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAEBC4729EF6D9500C0D4A4 /* TodosServiceImpTests.swift in Sources */,
+				CAB35D5329EF75B500F4CD47 /* URLProtocolStub.swift in Sources */,
 				CA4501E829EE6B8300D37E9A /* XCTestCase+Extensions.swift in Sources */,
 				CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */,
 				CA4501DF29EE695000D37E9A /* GetTodosUseCaseTests.swift in Sources */,

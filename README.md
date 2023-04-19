@@ -22,12 +22,17 @@ The project was developed with the following concepts in mind:
 - ``Test for memory leaks``
 - ``Folder separation: Domain, Data, Presentation and Framework``
 
+### Dependency Diagram:
+
+![Clean MVVM SwiftUI](https://user-images.githubusercontent.com/24886388/233205119-4adca89b-adbc-4ed6-a927-2c0be4b481ef.jpg)
+
 ### Dislaimer:
 
 This is a very basic project to serve as guide for a tested Clean Architecture approach with SwiftUI.
 
 - Feedback is welcomed.
 - I might add some more use cases and features in the near future.
+- TODO entity was used throughout the app for simplification sake. True modularity would be achieved by mapping it between layers.
 
 ### Useful resources that made this possible:
 

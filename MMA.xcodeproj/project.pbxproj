@@ -40,6 +40,7 @@
 		CAB35D5629EF83A800F4CD47 /* TodosDbImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */; };
 		CAB4F26C29EEE73400E426D7 /* GetTodosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */; };
 		CAB61AC029F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB61ABF29F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift */; };
+		CAB61AC229F0484900A2EE63 /* TodosRemoteDataGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB61AC129F0484900A2EE63 /* TodosRemoteDataGatewayTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		CAB35D5529EF83A800F4CD47 /* TodosDbImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbImpTests.swift; sourceTree = "<group>"; };
 		CAB4F26B29EEE73400E426D7 /* GetTodosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosRepositoryTests.swift; sourceTree = "<group>"; };
 		CAB61ABF29F03EDC00A2EE63 /* TodosDbDataGatewayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosDbDataGatewayTests.swift; sourceTree = "<group>"; };
+		CAB61AC129F0484900A2EE63 /* TodosRemoteDataGatewayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRemoteDataGatewayTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				CAAEBC4629EF6D9500C0D4A4 /* TodosServiceImpTests.swift */,
+				CAB61AC129F0484900A2EE63 /* TodosRemoteDataGatewayTests.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB61AC229F0484900A2EE63 /* TodosRemoteDataGatewayTests.swift in Sources */,
 				CAAEBC4729EF6D9500C0D4A4 /* TodosServiceImpTests.swift in Sources */,
 				CAB35D5329EF75B500F4CD47 /* URLProtocolStub.swift in Sources */,
 				CA4501E829EE6B8300D37E9A /* XCTestCase+Extensions.swift in Sources */,

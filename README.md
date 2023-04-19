@@ -24,7 +24,7 @@ The project was developed with the following concepts in mind:
 
 ### Dependency Diagram:
 
-![Clean MVVM SwiftUI](https://user-images.githubusercontent.com/24886388/233205119-4adca89b-adbc-4ed6-a927-2c0be4b481ef.jpg)
+![Clean MVVM SwiftUI](https://user-images.githubusercontent.com/24886388/233222696-eddef548-90d9-4930-b7bb-83eec2c9fdb4.jpg)
 
 ### Disclaimer:
 

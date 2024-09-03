@@ -3,7 +3,7 @@
 This is a small project that gets a TODO list from the network, stores it with Filemanager and shows it in a SwiftUI list.
 
 A second version of this repo is here: https://github.com/cesmejia/SwiftUI-Reactive-Clean-Architecture-MVVM
-It adds reactivity and a more comolete coordinator pattern with tabs
+It adds reactivity and a more complete coordinator pattern with tabs
 
 ## Overview
 
